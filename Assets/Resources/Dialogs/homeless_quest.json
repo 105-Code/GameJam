@@ -1,0 +1,46 @@
+{
+  "name": "Vagabundo",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Salir de aquí? Claro que sé como salir de aquí",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "Que si quiero salir?",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "No, no veo razón de hacerlo, este mundo ya no es lo que era",
+      "next": 3
+    },
+    {
+      "id": 3,
+      "text": "De hecho no sé por qué esperas que la vida en los otros sectores sea mejor.",
+      "next": 4
+    },
+    {
+      "id": 4,
+      "text": "Mira, está bien, te diré cómo salir de aquí.",
+      "next": 5
+    },
+    {
+      "id": 5,
+      "text": "Tengo la llave para el sector 2, te la daré a cambio de una nueva botella de jugo de uva.",
+      "next": 6
+    },
+    {
+      "id": 6,
+      "text": "Que cómo la vas a encontrar? Ese no es mi problema",
+      "next": 7,
+      "have_event":true,
+      "event_code": "homeless_quest"
+    },
+    {
+      "id": 7,
+      "final":true
+    }
+  ]
+}

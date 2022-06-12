@@ -1,0 +1,26 @@
+{
+  "name": "Vagabundo",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Wow! lo conseguiste, no se cómo lo hiciste pero estoy muy agradecido.",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "Toma, esta llave abrirá la puerta, pero te lo advierto…",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "Aunque este lugar te parezca miserable, puede que no te guste lo que haya fuera de aquí",
+      "next": 7,
+      "have_event":true,
+      "event_code": "homeless_quest_complete"
+    },
+    {
+      "id": 7,
+      "final":true
+    }
+  ]
+}
