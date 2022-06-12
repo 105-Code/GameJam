@@ -1,0 +1,61 @@
+{
+  "name": "Ciudadano",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Una cloaca? Crees que pueda salir por ahí?.",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "No lo había pensado, supongo que tantos años viviendo como un robot me dañaron la mente",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "Muchas gracias joven, te contaré sobre la zona prohibida como prometido.",
+      "next": 3
+    },
+    {
+      "id": 3,
+      "text": "Nunca he entrado ahí, pero sé que la empresa guarda algo ahí.",
+      "next": 4
+    },
+    {
+      "id": 4,
+      "text": "Algo muy importante.",
+      "next": 5
+    },
+    {
+      "id": 5,
+      "text": "Algo que si se descubre por gente común puede ocasionar una gran revolución.",
+      "next": 6
+    },
+    {
+      "id": 6,
+      "text": "Y sabés qué, espero que eso pase, así que te diré como entrar.",
+      "next": 7
+    },
+    {
+      "id": 7,
+      "text": "Toma, tengo una llave de acceso.",
+      "next": 8
+    },
+    {
+      "id": 8,
+      "text": "Espero que puedas encontrar el secreto que tanto guardan.",
+      "next":9
+    },
+    {
+      "id": 9,
+      "text": "Espero puedas ayudar a cambiar este mundo.",
+      "next": 10,
+      "have_event":true,
+      "event_code": "sad_guy_complete"
+    },
+    {
+      "id": 10,
+      "final":true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Ciudadano",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Oh, hola joven, veo que no eres de por aquí.",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "De hecho… podrías ayudarme en algo?",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "Tal vez para ti este lugar sea increíble y hermoso.",
+      "next": 3
+    },
+    {
+      "id": 3,
+      "text": "Pero sabes que veo yo?",
+      "next": 4
+    },
+    {
+      "id": 4,
+      "text": "Sabes como se ve este lugar en mi mente?",
+      "next": 5
+    },
+    {
+      "id": 5,
+      "text": "Plástico, vacío, sin humanidad.",
+      "next": 6
+    },
+    {
+      "id": 6,
+      "text": "Nos prohíben de crear nuestras propias decisiones.",
+      "next": 7
+    },
+    {
+      "id": 7,
+      "text": "No podemos expresarnos de ninguna manera que no haya sido aprobado revisado por la empresa.",
+      "next": 8
+    },
+    {
+      "id": 8,
+      "text": "Así que me gustaría vivir lo que es no tener este tipo de opresión.",
+      "next":9
+    },
+    {
+      "id": 9,
+      "text": "Aunque eso signifique comer basura o no ser nadie ante los ojos del mundo.",
+      "next": 10
+    },
+    {
+      "id": 10,
+      "text": "En fin, lo que quiero es que me ayudes a ir al sector S-3",
+      "next":11 
+    },
+    {
+      "id": 11,
+      "text": "Aquel lugar olvidado y lleno de basura.",
+      "next": 12
+    },
+    {
+      "id": 12,
+      "text": "Encuentra una manera de llegar allá y te diré como entrar a la zona prohibida.",
+      "next": 13,
+      "have_event":true,
+      "event_code": "sad_guy_quest"
+    },
+    {
+      "id": 13,
+      "final":true
+    }
+  ]
+}

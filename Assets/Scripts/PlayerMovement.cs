@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody _rigibody;
     private bool _can_move;
 
+    public Animator animator;
+    private bool m_FacingLeft = true; 
+
     public bool CanMove{
         get { return this._can_move; }
         set { this._can_move = value; }
@@ -18,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         this._can_move = true;
-        this._rigibody = GetComponent<Rigidbody>();    
+        this._rigibody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -28,9 +31,47 @@ public class PlayerMovement : MonoBehaviour
         {
             float xMove = Input.GetAxisRaw("Horizontal");
             float zMove = Input.GetAxisRaw("Vertical");
+            this.horizontalAnimation(xMove);
+            if(zMove != 0 || xMove != 0)
+            {
+                this.animator.SetFloat("Speed", 1);
+            }
+            else
+            {
+                this.animator.SetFloat("Speed", 0);
+            }
+
             this._rigibody.velocity = new Vector3(xMove, 0, zMove) * speed;
         }
 
+    }
+
+    private void horizontalAnimation(float xMove)
+    {
+        if (xMove < 0 && !this.m_FacingLeft)
+        {
+            this.flip();
+
+            return;
+        }
+
+        if (xMove > 0 && this.m_FacingLeft)
+        {
+            this.flip();
+           
+            return;
+        }
+    }
+
+    private void flip()
+    {
+        // Switch the way the player is labelled as facing.
+        this.m_FacingLeft = !this.m_FacingLeft;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
 }

@@ -1,0 +1,119 @@
+{
+  "name": "Jefe",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Quieres llegar al sector más alto de la ciudad eh?",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "Si esperas que te de una llave para salir de aquí, vas a tener que seguir esperando.",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "Porque no hay llaves para eso, lo que necesitas es una tarjeta de acceso.",
+      "next": 3
+    },
+    {
+      "id": 3,
+      "text": "Y no, no puedo entregarte la tarjeta así sin más.",
+      "next": 4
+    },
+    {
+      "id": 4,
+      "text": "Tienes que probar que eres lo suficientemente fiel a la empresa.",
+      "next": 5
+    },
+    {
+      "id": 5,
+      "text": "Así que tendrás que responder estas dos preguntas.",
+      "next": 6
+    },
+    {
+      "id": 6,
+      "text": "Si aciertas correctamente te entregaré la tarjeta",
+      "next": 7
+    },
+    {
+      "id": 7,
+      "text": "Estás listo?",
+      "next": 8
+    },
+    {
+      "id": 8,
+      "text": "Cuál es nuestro slogan?",
+      "have_options":true,
+      "options":[
+        {
+          "text": "Institución antes que humanidad.",
+          "next": 10
+        },
+        {
+          "text": "Humanidad antes que instituación.",
+          "next": 9
+        },
+        {
+          "text": "Unidos por siempre.",
+          "next": 9
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "¡No!. Tal vez no escuchaste bien",
+      "next": 8
+    },
+    {
+      "id": 10,
+      "text": "Correcto, siguiente pregunta:",
+      "next": 11
+    },
+    {
+      "id": 11,
+      "text": "Cuál sección está estrictamente prohibida de cruzar?",
+      "have_options":true,
+      "options":[
+        {
+          "text": "B-1",
+          "next": 13
+        },
+        {
+          "text": "C-4",
+          "next": 12
+        },
+        {
+          "text": "C-1",
+          "next": 12
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "¡No!, tal vez no escuchaste bien",
+      "next": 11
+    },
+    {
+      "id": 13,
+      "text": "Correcto, veo que no eres un cualquiera.",
+      "next": 14
+    },
+    {
+      "id": 14,
+      "text": "Toma la tarjeta, espero pronto encuentres lo que buscas.",
+      "next": 15
+    },
+    {
+      "id": 15,
+      "text": "Y recuerda, la institución siempre va antes que la humanidad.",
+      "next": 16,
+      "have_event":true,
+      "event_code": "boss_complete"
+    },
+    {
+      "id": 16,
+      "final":true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Worker",
+  "dialogs": [
+    {
+      "text": "Estoy muy cansado"
+    }
+  ]
+}

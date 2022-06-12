@@ -1,0 +1,61 @@
+{
+  "name": "Obrero",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Hola viajero!",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "Espero que estés disfrutando tu estadía en este bello lugar que nos ha proporcionado la empresa.",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "Ultimamente muchas personas están comenzando a quejarse de este lugar.",
+      "next": 3
+    },
+    {
+      "id": 3,
+      "text": "Y no entiendo por qué, es decir, tenemos un salario fijo, y derecho a una vivienda.",
+      "next": 4
+    },
+    {
+      "id": 4,
+      "text": "Aunque tengo entendido que si la empresa pierde algo de dinero, se pueden llevar mi casa.",
+      "next": 5
+    },
+    {
+      "id": 5,
+      "text": "Como sea, si pienso mucho en eso me encerrarán en la sección B-1.",
+      "next": 6
+    },
+    {
+      "id": 6,
+      "text": "No conoces la sección B-1?",
+      "next": 7
+    },
+    {
+      "id": 7,
+      "text": "Es un lugar al que tenemos prohibido ir, todo el que ha entrado ahí no ha vuelto jamás.",
+      "next": 8
+    },
+    {
+      "id": 8,
+      "text": "Espero haber servido bien esta semana, el jefe ya me había amenazado con llevarme ahí la semana pasada.",
+      "next": 9
+    },
+    {
+      "id": 9,
+      "text": "No conoces la sección B-1?",
+      "next": 10,
+      "have_event":true,
+      "event_code": "complete"
+    },
+    {
+      "id": 10,
+      "final":true
+    }
+  ]
+}

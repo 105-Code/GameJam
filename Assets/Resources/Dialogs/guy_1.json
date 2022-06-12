@@ -1,0 +1,26 @@
+{
+  "name": "Ciudadano",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Quién eres? Que haces aquí?",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "No pareces un ciudadano decente.",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "Dónde está tu traje? Y tu peinado corporativo?",
+      "next": 3,
+      "have_event":true,
+      "event_code": "complete"
+    },
+    {
+      "id": 3,
+      "final":true
+    }
+  ]
+}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 489802867378232889}
   - component: {fileID: 4719118936066299007}
   - component: {fileID: 3863679526675717059}
+  - component: {fileID: 1521821440952974314}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -47,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JSON: {fileID: 0}
   eventHandler: {fileID: 0}
+  dialogManager: {fileID: 0}
 --- !u!65 &3863679526675717059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58,8 +60,24 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6, y: 3, z: 6}
+  m_Size: {x: 7, y: 3, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1521821440952974314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489802867378232898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c467052262b25174b99867e15e625ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactPrefab: {fileID: 8502122240505303339, guid: fb03934913df013488bbdac5f208d7f1,
+    type: 3}
+  offset: {x: -2, y: 2, z: 0}
+  size: {x: 1, y: 1, z: 1}
 --- !u!1 &489802867380811011
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,6 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 489802867380811010}
   - component: {fileID: 489802867380811012}
+  - component: {fileID: 4638012666966369112}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -86,7 +105,7 @@ Transform:
   m_GameObject: {fileID: 489802867380811011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.28, y: 0.28, z: 0.28}
   m_Children: []
   m_Father: {fileID: 489802867378232889}
   m_RootOrder: 0
@@ -142,3 +161,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4638012666966369112
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489802867380811011}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba55f67c784e9764089e9b2f04bf44c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

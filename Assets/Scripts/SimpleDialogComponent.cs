@@ -37,19 +37,14 @@ public class SimpleDialogComponent : MonoBehaviour
     IEnumerator hideBubble()
     {
         yield return new WaitForSeconds(this.bubbleTime);
-        this._waiting = false;
         this.dialogBubble.SetActive(false);
-        if (this._index < this._actor.dialogs.Length)
+        this._index += 1;
+        if (this._index >= this._actor.dialogs.Length)
         {
-            this._index += 1;
-            yield return null;
-        }
-        else
-        {
-            Debug.Log("Ya llego al limite");
             this._index = 0;
         }
-        
+        this._waiting = false;
+
     }
 
 

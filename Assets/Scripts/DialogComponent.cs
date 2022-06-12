@@ -7,7 +7,7 @@ public class DialogComponent : MonoBehaviour
 {
     public TextAsset JSON;
     public EventHandler eventHandler;
-    public DialogManager dialogManager; 
+    public DialogManager dialogManager;
 
     private int _index;
     private string _actor;
@@ -18,9 +18,7 @@ public class DialogComponent : MonoBehaviour
 
     private void Awake()
     {
-        this._dialogs = new Dictionary<int, Dialog>();
-        this._dialog_started = false;
-        this._can_start = false;
+       
         this.loadFile();
     }
 
@@ -88,7 +86,13 @@ public class DialogComponent : MonoBehaviour
 
     private void onClickOption(Dialog option)
     {
-        this._current_dialog = option;
+       
+        if (option.have_event)
+        {
+            this.eventHandler.triggerEvent(option.event_code);
+        }
+        this._index = option.next;
+        this._dialogs.TryGetValue(this._index, out this._current_dialog);
         this.showCurrentDialog();
         this.setNextDialog();
     }
@@ -110,8 +114,12 @@ public class DialogComponent : MonoBehaviour
         this._index = this._current_dialog.next;
     }
 
-    private bool loadFile()
+    public bool loadFile()
     {
+        this._index = 0;
+        this._dialog_started = false;
+        this._dialogs = new Dictionary<int, Dialog>();
+        this._can_start = false;
         ActorJSON actor = JsonUtility.FromJson<ActorJSON>(this.JSON.text);
         
         this._actor = actor.name;

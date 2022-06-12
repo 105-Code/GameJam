@@ -1,0 +1,26 @@
+{
+  "name": "Ciudadano",
+  "dialogs": [
+    {
+      "id": 0,
+      "text": "Sabías que los árboles de aquí son de plástico?",
+      "next": 1
+    },
+    {
+      "id": 1,
+      "text": "La verdad es algo obvio, es decir, el tronco es completamente verde y hueco",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "text": "Extraño las plantas reales.",
+      "next": 3,
+      "have_event":true,
+      "event_code": "complete"
+    },
+    {
+      "id": 3,
+      "final":true
+    }
+  ]
+}

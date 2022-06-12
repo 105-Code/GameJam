@@ -320,6 +320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8587813496077444560}
   - component: {fileID: 8587813496077444566}
+  - component: {fileID: 2299478136455192603}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -336,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 8587813496077444561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.28, y: 0.28, z: 0.28}
   m_Children: []
   m_Father: {fileID: 8587813496081551083}
   m_RootOrder: 0
@@ -392,6 +393,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2299478136455192603
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8587813496077444561}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8587813496081550992
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff5be8d160720149a81d4fa1f0edbc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JSON: {fileID: 4900000, guid: decee7646b8a5264aa365bf9e996ec6a, type: 3}
+  JSON: {fileID: 0}
   dialogBubble: {fileID: 3433315971144656154}
   bubbleTime: 5
