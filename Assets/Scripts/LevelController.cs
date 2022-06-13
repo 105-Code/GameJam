@@ -26,6 +26,14 @@ public class LevelController : MonoBehaviour
         this._is_complete = false;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu");
+        }
+    }
+
 
     public void changeScene()
     {
