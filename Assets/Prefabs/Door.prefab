@@ -113,6 +113,7 @@ MonoBehaviour:
     type: 3}
   offset: {x: 1.8, y: 0, z: 0}
   size: {x: 1.5, y: 0.4, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &3156587665594499963
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +169,8 @@ GameObject:
   - component: {fileID: 3945084634482828292}
   - component: {fileID: 76589815079660449}
   - component: {fileID: 2807129387477802859}
+  - component: {fileID: 3107923481023818275}
+  - component: {fileID: 6873811915716709287}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -238,6 +241,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3107923481023818275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4464212089380224702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15053652, y: 0.064626805, z: 0.017989742}
+  m_Center: {x: 0.05488987, y: 0.025710514, z: 0.03360845}
+--- !u!65 &6873811915716709287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4464212089380224702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15053652, y: 0.064626805, z: 0.018025259}
+  m_Center: {x: 0.05488987, y: 0.025710514, z: -0.0335905}
 --- !u!1 &4843104847841642556
 GameObject:
   m_ObjectHideFlags: 0
