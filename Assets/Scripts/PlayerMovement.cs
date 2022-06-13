@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 6f;
+    public float speed = 9f;
     private Rigidbody _rigibody;
     private bool _can_move;
+    public AudioSource steps;
 
     public Animator animator;
     private bool m_FacingLeft = true; 
@@ -35,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
             if(zMove != 0 || xMove != 0)
             {
                 this.animator.SetFloat("Speed", 1);
+                if (!this.steps.isPlaying)
+                {
+                    this.steps.Play();
+                }
             }
             else
             {
