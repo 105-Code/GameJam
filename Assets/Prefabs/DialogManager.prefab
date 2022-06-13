@@ -121,7 +121,7 @@ MonoBehaviour:
   optionPrefab: {fileID: 2733260074524060151, guid: 8c112562bf6928940a9cc7df47c1b164,
     type: 3}
   waiting: 0
-  profile_image: {fileID: 0}
+  profile_image: {fileID: 7570162428623268616}
   player: {fileID: 0}
 --- !u!1 &7570162427346113198
 GameObject:
