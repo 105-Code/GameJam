@@ -14,7 +14,9 @@
     {
       "id": 2,
       "text": "Dónde está tu traje? Y tu peinado corporativo?",
-      "next": 3
+      "next": 3,
+      "have_event":true,
+      "event_code": "complete"
     },
     {
       "id": 3,
