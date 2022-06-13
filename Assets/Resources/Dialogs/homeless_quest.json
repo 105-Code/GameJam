@@ -3,7 +3,7 @@
   "dialogs": [
     {
       "id": 0,
-      "text": "Salir de aquí? Claro que sé como salir de aquí",
+      "text": "Salir de aquí? Claro que sé como salir de aquí.",
       "next": 1
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "id": 6,
-      "text": "Que cómo la vas a encontrar? Ese no es mi problema",
+      "text": "Que cómo la vas a encontrar? Ese no es mi problema.",
       "next": 7,
       "have_event":true,
       "event_code": "homeless_quest"

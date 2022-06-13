@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "text": "Aunque este lugar te parezca miserable, puede que no te guste lo que haya fuera de aquí",
+      "text": "Aunque este lugar te parezca miserable, puede que no te guste lo que haya fuera de aquí.",
       "next": 7,
       "have_event":true,
       "event_code": "homeless_quest_complete"
