@@ -14,9 +14,7 @@
     {
       "id": 2,
       "text": "Extraño las plantas reales.",
-      "next": 3,
-      "have_event":true,
-      "event_code": "complete"
+      "next": 3
     },
     {
       "id": 3,
