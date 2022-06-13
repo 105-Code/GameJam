@@ -8,6 +8,7 @@ public class DialogComponent : MonoBehaviour
     public TextAsset JSON;
     public EventHandler eventHandler;
     public DialogManager dialogManager;
+    public Sprite profile;
 
     private int _index;
     private string _actor;
@@ -43,6 +44,7 @@ public class DialogComponent : MonoBehaviour
 
         if (!this._dialog_started)
         {
+            this.dialogManager.Profile = this.profile;
             this.dialogManager.gameObject.SetActive(true);
             this._dialog_started = true;
         }

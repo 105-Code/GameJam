@@ -11,12 +11,24 @@ public class DialogManager : MonoBehaviour
     public GameObject optionsHolder;
     public GameObject optionPrefab;
     public bool waiting;
+    public Image profile_image;
 
+
+    public PlayerMovement player;
     private TextMeshProUGUI _text;
+
+    public Sprite Profile
+    {
+        set
+        {
+            this.profile_image.sprite = value;
+        }
+    }
 
     private void OnEnable()
     {
         Debug.Log("Enable");
+        this.player.CanMove = false;
         this.waiting = false;
         this._text = this.textHolder.GetComponent<TextMeshProUGUI>();
     }
@@ -24,6 +36,7 @@ public class DialogManager : MonoBehaviour
     private void OnDisable()
     {
         Debug.Log("Disable");
+        this.player.CanMove = true;
         this._text.text = "";
     }
 
